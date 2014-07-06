@@ -6,6 +6,8 @@ class ParsedownMarkdownTest extends TestCase {
 
     public function setUp()
     {
+        parent::setUp();
+
         $this->parsedown = new ParsedownMarkdown;
 
         $this->markdownFile = $this->storage.'Markdown/Parsedown/TestMarkdown.md';

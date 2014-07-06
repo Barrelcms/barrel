@@ -8,6 +8,18 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase {
 		$this->storage = $this->testPath.'/storage/';
 	}
 
+	public function setUp()
+	{
+		parent::setUp();
+
+		$this->prepareForTests();
+	}
+
+	private function prepareForTests()
+	{
+		Artisan::call('migrate');
+	}
+
 	/**
 	 * Creates the application.
 	 *
