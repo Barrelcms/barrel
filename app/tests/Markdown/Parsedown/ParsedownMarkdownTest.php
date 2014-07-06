@@ -8,13 +8,11 @@ class ParsedownMarkdownTest extends TestCase {
     {
         $this->parsedown = new ParsedownMarkdown;
 
-        $this->markdownFile = $this->tmpStorage.'ParsedownMarkdownTestMarkdown.md';
-        file_put_contents($this->markdownFile, 'Hello World.');
+        $this->markdownFile = $this->storage.'Markdown/Parsedown/TestMarkdown.md';
     }
 
     public function tearDown()
     {
-        unlink($this->markdownFile);
         unset($this->parsedown);
         unset($this->markdownFile);
     }
