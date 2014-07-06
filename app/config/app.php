@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'c2CnXWQpyc7HU1oQDaGjgGCR4rTQ11v7',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -121,6 +121,13 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+
+		// Package Service Providers
+		'TwigBridge\ServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
+
+		// LaBlog Service Providers
+
 
 	),
 
