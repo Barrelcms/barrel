@@ -1,4 +1,4 @@
-<?php namespace Lablog\Database;
+<?php namespace Barrel\Database;
 
 use Way\Database\Model as WayModel;
 

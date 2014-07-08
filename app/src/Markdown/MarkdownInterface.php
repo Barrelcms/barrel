@@ -1,4 +1,4 @@
-<?php namespace Lablog\Markdown;
+<?php namespace Barrel\Markdown;
 
 interface MarkdownInterface {
     public function convertString($string);

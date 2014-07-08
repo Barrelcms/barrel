@@ -1,6 +1,6 @@
-<?php namespace Lablog\Markdown\Parsedown;
+<?php namespace Barrel\Markdown\Parsedown;
 
-use Lablog\Markdown\MarkdownInterface;
+use Barrel\Markdown\MarkdownInterface;
 use ParsedownExtra;
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-use Lablog\Entities\Role;
+use Barrel\Entities\Role;
 
 class RoleEntityTest extends TestCase {
 
@@ -34,9 +34,9 @@ class RoleEntityTest extends TestCase {
         unset($this->role);
     }
 
-    public function testEntityIsInstanceOfLablogModel()
+    public function testEntityIsInstanceOfBarrelModel()
     {
-        $this->assertInstanceOf('Lablog\Database\Model', $this->role);
+        $this->assertInstanceOf('Barrel\Database\Model', $this->role);
     }
 
     public function testEntityCanNotBeSavedWithoutRoleName()

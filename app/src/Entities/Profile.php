@@ -1,6 +1,6 @@
-<?php namespace Lablog\Entities;
+<?php namespace Barrel\Entities;
 
-use Lablog\Database\Model;
+use Barrel\Database\Model;
 
 class Profile extends Model {
 

@@ -33,7 +33,7 @@ App::after(function($request, $response)
 |
 */
 
-Route::filter('auth', function()
+Route::filter('adminAuth', function()
 {
 	if (Auth::guest())
 	{
@@ -43,7 +43,7 @@ Route::filter('auth', function()
 		}
 		else
 		{
-			return Redirect::guest('login');
+			return Redirect::guest('admin/login');
 		}
 	}
 });
@@ -86,5 +86,21 @@ Route::filter('csrf', function()
 	if (Session::token() != Input::get('_token'))
 	{
 		throw new Illuminate\Session\TokenMismatchException;
+	}
+});
+
+/*
+|--------------------------------------------------------------------------
+| Installatin Filter
+|--------------------------------------------------------------------------
+|
+| Check if the main application has been installed to the database and a
+| user has been setup.
+|
+*/
+
+Route::filter('install', function() {
+	if (true) {
+		$var = true;
 	}
 });

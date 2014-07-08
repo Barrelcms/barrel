@@ -15,3 +15,25 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('install', [
+    'as' => 'install',
+    'before' => 'install',
+    'uses' => 'Install\InstallController@index'
+]);
+
+Route::get('admin', [
+    'as' => 'admin',
+    'before' => 'adminAuth',
+    'uses' => 'Admin\DefaultController@index'
+]);
+
+Route::get('admin/login', [
+    'as' => 'admin.login',
+    'uses' => 'Admin\AuthController@index'
+]);
+
+Route::get('admin/logout', [
+    'as' => 'admin.logout',
+    'uses' => 'Admin/AuthController'
+]);

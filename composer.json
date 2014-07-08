@@ -23,7 +23,7 @@
 			"app/tests/TestCase.php"
 		],
 		"psr-4": {
-			"Lablog\\": "app/src/"
+			"Barrel\\": "app/src/"
 		}
 	},
 	"scripts": {

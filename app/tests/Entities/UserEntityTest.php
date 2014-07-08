@@ -1,6 +1,6 @@
 <?php
 
-use Lablog\Entities\User;
+use Barrel\Entities\User;
 
 class UserEntityTest extends TestCase {
 
@@ -21,9 +21,9 @@ class UserEntityTest extends TestCase {
         unset($this->user);
     }
 
-    public function testEntityIsInstanceOfLablogModel()
+    public function testEntityIsInstanceOfBarrelModel()
     {
-        $this->assertInstanceOf('Lablog\Database\Model', $this->user);
+        $this->assertInstanceOf('Barrel\Database\Model', $this->user);
     }
 
     public function testEntityCanNotBeSavedWithoutUsername()

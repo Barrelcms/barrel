@@ -1,6 +1,6 @@
 <?php
 
-use Lablog\Entities\Profile;
+use Barrel\Entities\Profile;
 
 class ProfileEntityTest extends TestCase {
 
@@ -22,9 +22,9 @@ class ProfileEntityTest extends TestCase {
         unset($this->profile);
     }
 
-    public function testEntityIsInstanceOfLablogModel()
+    public function testEntityIsInstanceOfBarrelModel()
     {
-        $this->assertInstanceOf('Lablog\Database\Model', $this->profile);
+        $this->assertInstanceOf('Barrel\Database\Model', $this->profile);
     }
 
     public function testEntityCanNotBeSavedIfUserIDIsNull()

@@ -1,6 +1,6 @@
-<?php namespace Lablog\Entities;
+<?php namespace Barrel\Entities;
 
-use Lablog\Database\Model;
+use Barrel\Database\Model;
 use Illuminate\Auth\UserTrait;
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableTrait;

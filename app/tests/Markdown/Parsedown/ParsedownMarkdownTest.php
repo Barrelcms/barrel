@@ -1,6 +1,6 @@
 <?php
 
-use Lablog\Markdown\Parsedown\ParsedownMarkdown;
+use Barrel\Markdown\Parsedown\ParsedownMarkdown;
 
 class ParsedownMarkdownTest extends TestCase {
 
@@ -21,7 +21,7 @@ class ParsedownMarkdownTest extends TestCase {
 
     public function testIsInstanceOfMarkdownInterface()
     {
-        $this->assertInstanceOf('Lablog\Markdown\MarkdownInterface', $this->parsedown);
+        $this->assertInstanceOf('Barrel\Markdown\MarkdownInterface', $this->parsedown);
     }
 
     public function testBasicMarkdownConversionUsingString()
