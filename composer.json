@@ -1,6 +1,6 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
+	"name": "Barrel CMS",
+	"description": "The Barrel Content Management System",
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
