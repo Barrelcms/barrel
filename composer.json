@@ -23,7 +23,7 @@
 			"app/tests/TestCase.php"
 		],
 		"psr-4": {
-			"Barrel\\": "app/src/"
+			"Barrel\\": "app/barrel/"
 		}
 	},
 	"scripts": {
