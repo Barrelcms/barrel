@@ -1,5 +1,9 @@
 <?php
 
+use Composer\Console\Application;
+use Symfony\Component\Console\Input\ArrayInput;
+use Symfony\Component\Console\Output\BufferedOutput;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -16,7 +20,7 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('install', [
+Route::post('install', [
     'as' => 'install',
     'before' => 'install',
     'uses' => 'Install\InstallController@index'

@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/jralph/lablog-v2.svg)](https://travis-ci.org/jralph/lablog-v2)
+[![Build Status](https://travis-ci.org/Barrelcms/barrel.svg)](https://travis-ci.org/Barrelcms/barrel)
