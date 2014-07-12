@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/Barrelcms/barrel.svg)](https://travis-ci.org/Barrelcms/barrel)
+[![Build Status](https://travis-ci.org/Barrelcms/application.svg)](https://travis-ci.org/Barrelcms/application)

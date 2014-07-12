@@ -127,7 +127,7 @@ return array(
 		'Way\Generators\GeneratorsServiceProvider',
 
 		// LaBlog Service Providers
-
+		'Barrel\BarrelServiceProvider'
 
 	),
 

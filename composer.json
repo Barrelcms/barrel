@@ -1,11 +1,12 @@
 {
-	"name": "Barrel CMS",
+	"name": "barrel/barrel",
 	"description": "The Barrel Content Management System",
 	"keywords": ["cms", "platform", "application"],
 	"license": "MIT",
 	"require": {
 		"php": ">=5.4.0",
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"barrel/application": "dev-master@dev"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "4.*"
