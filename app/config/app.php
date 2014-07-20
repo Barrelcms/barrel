@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -127,7 +127,7 @@ return array(
 		'Way\Generators\GeneratorsServiceProvider',
 
 		// LaBlog Service Providers
-		'Barrel\BarrelServiceProvider'
+		'Barrel\Providers\BarrelServiceProvider'
 
 	),
 

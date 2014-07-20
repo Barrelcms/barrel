@@ -11,16 +11,22 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+if (!file_exists(app_path().'/database/production.sqlite') || !Schema::hasTable('install') || !Barrel\Entities\Install::count()) {
+    Route::get('/', function()
+    {
+    	return View::make('hello');
+    });
 
-Route::post('install', [
-    'as' => 'install',
-    'before' => 'install',
-    'uses' => 'Install\InstallController@index'
-]);
+    Route::post('installer', [
+        'as' => 'installer.action',
+        'uses' => 'Barrel\Controllers\Install\InstallController@actions'
+    ]);
+
+    Route::get('installer/complete', [
+        'as' => 'installer.complete',
+        'uses' => 'Barrel\Controllers\Install\InstallController@completeInstall'
+    ]);
+}
 
 Route::get('admin', [
     'as' => 'admin',

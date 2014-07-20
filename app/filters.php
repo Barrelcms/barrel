@@ -88,19 +88,3 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
-
-/*
-|--------------------------------------------------------------------------
-| Installatin Filter
-|--------------------------------------------------------------------------
-|
-| Check if the main application has been installed to the database and a
-| user has been setup.
-|
-*/
-
-Route::filter('install', function() {
-	if (true) {
-		$var = true;
-	}
-});
